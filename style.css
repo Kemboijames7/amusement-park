@@ -1,8 +1,23 @@
-/* /* *{
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #0f1a2c;
+  --tertiary-color: #1f218f;
+  --secondary-color: #e94f26;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f8fafc;
+  --white: #fff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+ 
+ 
+ {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
             font-family: Arial, sans-serif;
@@ -21,6 +36,10 @@ body {
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: #fff;
+            border-radius: 5px solid --tertiary-color;
+            
+
+
         }
 
         label {

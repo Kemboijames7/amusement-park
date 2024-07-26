@@ -53,7 +53,17 @@ document.getElementById('visitor-form').addEventListener('submit', function(even
     const ticketId = document.getElementById('ticketId').value;
     const visitor = createVisitor(name, age, ticketId);
     document.getElementById('visitor-info').innerText = JSON.stringify(visitor, null, 2);
+   // Change the color of the text area
+   changeTextAreaColor();
 });
+
+function changeTextAreaColor() {
+    const textArea = document.getElementById('myTextArea');
+    textArea.style.backgroundColor = 'lightblue'; // Change the background color
+    textArea.style.color = 'darkblue'; // Change the text color
+    // You can also change other properties, such as border color, font, etc.
+    textArea.style.borderColor = 'blue';
+}
 
 document.getElementById('status-form').addEventListener('submit', function(event) {
     event.preventDefault();
