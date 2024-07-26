@@ -53,17 +53,19 @@ document.getElementById('visitor-form').addEventListener('submit', function(even
     const ticketId = document.getElementById('ticketId').value;
     const visitor = createVisitor(name, age, ticketId);
     document.getElementById('visitor-info').innerText = JSON.stringify(visitor, null, 2);
-   // Change the color of the text area
-   changeTextAreaColor();
+     // Change the color of the text area
+     changeTextAreaColor();
 });
 
+
 function changeTextAreaColor() {
-    const textArea = document.getElementById('myTextArea');
-    textArea.style.backgroundColor = 'lightblue'; // Change the background color
-    textArea.style.color = 'darkblue'; // Change the text color
+    const textArea = document.getElementById('visitor-info','status-info','gtc-info');
+    textArea.style.backgroundColor = 'gainsboro'; // Change the background color
+    textArea.style.color = '#466e78'; // Change the text color
     // You can also change other properties, such as border color, font, etc.
-    textArea.style.borderColor = 'blue';
+    textArea.style.borderColor = '#0f1a2c';
 }
+
 
 document.getElementById('status-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -76,6 +78,7 @@ document.getElementById('revoke-button').addEventListener('click', function() {
     const visitor = JSON.parse(document.getElementById('visitor-info').innerText);
     const updatedVisitor = revokeTicket(visitor);
     document.getElementById('visitor-info').innerText = JSON.stringify(updatedVisitor, null, 2);
+  
 });
 
 document.getElementById('gtc-button').addEventListener('click', function() {

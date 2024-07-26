@@ -8,28 +8,33 @@
   --text-light: #64748b;
   --extra-light: #f8fafc;
   --white: #fff;
-  --max-width: 1200px;
+  /* --max-width: 1200px; */
   --header-font: "Playfair Display", serif;
 }
  
- 
- {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f8ff;
-            color: #333;
+    font-family: Arial, sans-serif;
+   background-color: #b7b084;
+    color: #333;
+   max-width: 800px;
+   margin: auto;
+
         }
+
+
 
         h1, h2 {
             color: #2c3e50;
+            font-family:var(--header-font);
+            font-weight: 700;
+            font-style: italic;
         }
 
+  
+
+      
         form {
             margin-bottom: 20px;
             padding: 10px;
@@ -37,30 +42,38 @@ body {
             border-radius: 5px;
             background-color: #fff;
             border-radius: 5px solid --tertiary-color;
-            
-
-
-        }
+            display: flex;
+            flex-direction: column;
+           
+           /* flex-direction: column; */
+        
+               
+              }
 
         label {
-            display: block;
+         
             margin-top: 10px;
         }
 
-        input[type="text"], input[type="number"] {
+        input  {
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+
             width: calc(100% - 22px);
-            padding: 10px;
+            padding: 10px 1px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
 
         button {
+
             padding: 10px 15px;
             margin-top: 10px;
-            border: none;
+            border:  1px solid #ccc;
             border-radius: 5px;
-            background-color: #3498db;
+            background-color: #304d61;
             color: white;
             cursor: pointer;
         }
@@ -73,6 +86,8 @@ body {
             margin-top: 10px;
             padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #ecf0f1;
+            border-radius: 10px;
+            background-color: gainsboro;
+            white-space: pre-wrap;
+
         }
